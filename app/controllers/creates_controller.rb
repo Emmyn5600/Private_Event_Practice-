@@ -1,5 +1,6 @@
 class CreatesController < ApplicationController
   before_action :set_create, only: %i[ show edit update destroy ]
+  #before_action :authenticate_user!, except: i%[ index show]
 
   # GET /creates or /creates.json
   def index
